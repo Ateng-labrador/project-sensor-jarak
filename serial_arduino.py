@@ -7,14 +7,16 @@ import sys
 filename = "arduino.txt"
 
 def adddata(data):#a function to add the data to the text file
-	date=time.time()
-	h=str(data)+','+str(date)+'\n'
+	h=str(data)+'\n'
 	fh = open(filename, 'a')
 	fh.write(h) 
 	fh.close 
 
 if len(sys.argv) < 2:
-	portname = 'COM3'
+	"""
+	Ubah sesuai mesin
+	"""
+	portname = 'COM4'
 else:
 	portname = sys.argv[1]
 	
