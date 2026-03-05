@@ -4,7 +4,7 @@ from serial import Serial
 import time
 import sys
 
-filename = "arduino.txt"
+filename = "putaran3.txt"
 
 def adddata(data):#a function to add the data to the text file
 	h=str(data)+'\n'
@@ -16,7 +16,7 @@ if len(sys.argv) < 2:
 	"""
 	Ubah sesuai mesin
 	"""
-	portname = 'COM4'
+	portname = 'COM3'
 else:
 	portname = sys.argv[1]
 	
